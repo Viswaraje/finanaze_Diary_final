@@ -1,0 +1,31 @@
+//about
+<div className="container mx-auto text-center">
+        <div className="inline-block">
+          <Link to="/budget" className="btn bg-pink-500 text-white-700 border-blue-400 text-white border border-blue-700 hover:bg-gradient-to-r from-purple-300 to-blue-500 p-5 rounded-md">
+            Alrighty, I’m ready to learn! 📚
+          </Link>
+        </div>
+      </div>
+
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+ }
+  
+ h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+  
+//currency
+ /* Hide Radio Buttons and Submit Button */
+  input[type="radio"], button {
+    display: none;
+  }

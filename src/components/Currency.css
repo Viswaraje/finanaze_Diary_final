@@ -1,0 +1,103 @@
+/* CURRENCY */
+
+#currency-header h1{
+    font-size: 70px !important;
+    width: 70%;
+    margin-bottom: 0px;
+    
+  }
+  
+  #currency-header h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 200px;
+      margin-left: 200px;
+    margin-bottom: 0px;
+    margin: 0 auto;
+  }
+  fieldset {
+     
+     width: 90%; /* Adjust the width as needed */
+     margin: 0 auto;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    */
+  }
+  
+  
+  fieldset legend {
+    font-weight: 700;
+    text-align: center;
+
+  }
+  
+  .answer__item {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      padding: 0.75rem 1.25rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background: white;
+      color: black;
+      border: solid 1px black;
+      border-radius: 20px;
+  }
+  
+ 
+  
+  /* Any correct answer on any answered question, highlight in light green */
+  :valid .answer__item--is-correct { background-color: rgba(61, 181, 64, 0.6) }
+  
+  /* Show any extra explanatory text */
+  .answer__reveal-text { display: none; }
+  :valid .answer__reveal-text { display: block }
+  
+  /* Any chosen answer, highlight in red */
+  :checked + .answer__item { color: #ffffff; background-color: #c70000 }
+  
+  /* Any correctly chosen answer, highlight in bright green */
+  :checked + .answer__item--is-correct { background-color: #3db540; }
+  
+  /* Show the icon for the selected answer */
+  :checked + .answer__item .answer__icon { display: inline-block }
+  
+  
+  /* prevent chosing another answer once chosen */
+  :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+  :valid + .answer__item { pointer-events: none }
+  
+  /* keep track of score */
+  form { counter-reset: quiz-score }
+  :checked + .answer__item--is-correct { counter-increment: quiz-score }
+  .score:after { content: counter(quiz-score) "/" attr(data-question-count) }
+  
+  /* show score once quiz has been completed */
+  .message { display: none; }
+  form:valid .message { display: block }
+  
+  #currency-page p {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 35px;
+    font-weight: 600 !important;
+    margin-top: 0px;
+  }
+  
+  #main-currency{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  #ar-pic {
+    display: block;
+    margin: 0 auto;
+  }
+
+ 
